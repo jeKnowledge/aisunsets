@@ -74,6 +74,11 @@ p{
   margin-top: 10px;
   height: 601px;
   background-color: #E66453;
+  background-image: url('../img/blend.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
   border-radius: 22px;
   width: 100%;
   display: flex;
