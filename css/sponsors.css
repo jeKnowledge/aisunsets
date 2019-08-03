@@ -1,0 +1,129 @@
+.red_container {
+  height: 90vh;
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: 500;
+  color: #F4EFDF;
+}
+
+.red_container .info {
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.red_container .info .info-header {
+  font-size: 72px;
+  line-height: 100%;
+  margin-bottom: 40px;
+}
+
+.red_container .info .info-paragraph {
+  font-size: 28px;
+  line-height: 111%;
+}
+
+.red_container .info img {
+  width: 35vw;
+  min-width: 400px;
+  height: auto;
+}
+
+.red_container form {
+  width: 400px;
+}
+
+.red_container form label {
+  font-size: 36px;
+  line-height: 161%;
+  margin-bottom: 20px;
+}
+
+.red_container form .tab {
+  display: none;
+  flex-direction: column;
+}
+
+.red_container form input:focus, .red_container form button:focus {
+  outline: none;
+}
+
+.red_container form input {
+  width: 400px;
+  border: none;
+  border-bottom: 2px solid #F4EFDF;
+  margin-bottom: 80px;
+  color: #F4EFDF;
+  background-color: transparent;
+}
+
+.red_container form .invalid {
+  border-bottom: 2px solid black;
+}
+
+.red_container form button {
+  width: 150px;
+  height: 40px;
+  float: right;
+  border: 2px solid #F4EFDF;
+  border-radius: 10px;
+  background: #F4EFDF;
+  color: #CEC238;
+  font-size: 18px;
+  line-height: 111%;
+}
+
+.red_container form .submit-header {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 100%;
+  margin: 30px 0 5px 0;
+}
+
+.red_container form .submit-paragraph {
+  font-size: 24px;
+  line-height: 100%;
+  margin-bottom: 30px;
+}
+
+
+.red_container form #next-btn {
+  margin-left: 10px;
+}
+
+::placeholder {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 161%;
+  color: rgba(244, 239, 223,0.5);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #F4EFDF;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (max-width: 980px) { /*mobile*/
+  .red_container {
+    height: 110vh;
+  }
+
+  .red_container .info {
+    flex-wrap: wrap;
+  }
+
+  .red_container .info .info-header {
+    font-size: 48px;
+  }
+
+  .red_container .info .info-paragraph {
+    font-size: 18px;
+  }
+}
