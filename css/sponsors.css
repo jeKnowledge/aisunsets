@@ -95,6 +95,12 @@
   margin-left: 10px;
 }
 
+.red_container form #prev-btn {
+  border: none;
+  background: transparent;
+  color: #F4EFDF;
+}
+
 ::placeholder {
   font-weight: bold;
   font-size: 24px;
