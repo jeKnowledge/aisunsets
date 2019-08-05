@@ -1,0 +1,39 @@
+.text-big-header {
+  font-size: 7rem;
+  line-height: 100%;
+}
+
+.text-header {
+  font-size: 6rem;
+  line-height: 100%;
+}
+
+.text-title {
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 111%;
+}
+
+.text-title-v2 {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 100%;
+}
+
+.text-subtitle {
+  font-size: 3rem;
+  line-height: 100%;
+}
+
+.text-paragraph {
+  font-size: 2rem;
+  line-height: 111%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}

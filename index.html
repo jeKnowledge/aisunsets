@@ -1,192 +1,165 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/gif" href="img/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type = "text/css" href="css/style.css">
-    <link rel="stylesheet" type = "text/css" href="css/desktop.css">
-    <link rel="icon" type="image/gif" href="img/favicon1.png"/>
 
-    <title>AI Sunsets</title>
-  </head>
-  <body>
-  <nav class="navbar navbar-light">
-    <a class="navbar-brand" href="#"><img src="img/mainlogo.svg" alt="logo"></a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/gif" href="img/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/navbar.js"></script>
+  <title>AI Sunsets</title>
+</head>
 
-    <span class="navbar-text">
-      <p id="rem">NEXT SESSION</p>
-      <p id="remblue">SET 28, 2019</p>
-    </span>
+<body id="no-scroll">
+  <nav class="navbar">
+    <a class="navbar-logo" href="index.html"><img src="img/mainlogo.svg" alt="Aisunset Logo"></a>
+    <div class="navbar-text">
+      <p class="text-paragraph grey mb5">NEXT SESSION</p>
+      <p class="text-paragraph dark-blue">SET 28, 2019</p>
+    </div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler center" type="button" onclick="toggle()">
       <img src="img/hamburguer.svg" alt="hamburguer">
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">program</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">tickets</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">sponsors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">team</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        <p id="navbar-active-list-mini">with love, from Coimbra</p>
-      </span>
-    </div>
   </nav>
-
-  <div class="main">
-    <div class="red_container">
-      <section class="sec_left">
-        <section class="title">
-          <p id="title_text"> artificial intelligence <br>— at the sunset </p>
-          <p id="title_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        </section>
-
-        <div class="callToActionHide">
-          <div class="ctaleft">
-            <p id="ctaleftred">get tickets</p>
-          </div>
-          <div class="ctaright">
-            <p id="ctarightred">see program</p>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="mainimg">
-        <img src="img/desenhoini.svg" alt="desenho">
-      </section>
-
-      <div class="callToAction">
-        <span class="hide">
-          <div class="ctaleft">
-            <p id="ctaleftred">get tickets</p>
-          </div>
-          <div class="ctaright">
-            <p id="ctarightred">see program</p>
-          </div>
-        </span>
-      </div>
-
-    </div>
-
-    <div class="firstbege">
-        <h4 id="formula">THE FORMULA</h4>
-        <img id="mathimg" src="img/math.svg" alt="math">
-    </div>
-
-    <div class="blue_container">
-        <div class="information">
-          <h4 id="blue_squared">NEXT SESSION</h4>
-          <p id="font_medium">SET 28, 2019</p>
-          <p id="font_medium">GALERIA BAR SANTA CLARA, COIMBRA</p>
-        </div>
-      <section class="changes_in_desktop">
-        <div class="information">
-          <h2>talk</h2>
-          <p id="titlestyle">Can a robot pass a university entrance exam?</p>
-          <p id="boldstyle">noriko arai<span id="normalstyle">, 16:00</span></p>
-        </div>
-
-        <div class="information">
-          <h2>workshop</h2>
-          <p id="titlestyle">Can a robot pass a university entrance exam?</p>
-          <p id="boldstyle">noriko arai<span id="normalstyle">, 16:00</span></p>
-        </div>
-
-        <div class="information">
-          <h2>debate</h2>
-          <p id="titlestyle">Can a robot pass a university entrance exam?</p>
-          <p id="boldstyle">noriko arai<span id="normalstyle">, 16:00</span></p>
-        </div>
-      </section>
-      <div class="callToAction">
-        <div class="ctaleft">
-          <p id="ctaleftblue">get tickets</p>
-        </div>
-        <div class="ctaright">
-          <p id="ctarightblue">see program</p>
-        </div>
-      </div>
+  <div class="navbar-collapse center" id="collapse">
+    <ul class="center">
+      <li class="mb20">
+        <a class="text-header bold dark-blue" href="#">program</a>
+      </li>
+      <li class="mb20">
+        <a class="text-header bold dark-blue" href="#">tickets</a>
+      </li>
+      <li class="mb20">
+        <a class="text-header bold dark-blue" href="sponsors.html">sponsors</a>
+      </li>
+      <li class="mb50">
+        <a class="text-header bold dark-blue" href="#">team</a>
+      </li>
+    </ul>
+    <p class="text-paragraph dark-blue">with love, from Coimbra</p>
   </div>
 
-  <div class="firstbege">
-    <h4 id="nopad">PRICING</h4>
-    <div class="callToAction">
-      <div class="ctaleft">
-        <p id="ctarightblue"><span id="regular">regular</span> <br> <span id="prices1">10€</span></p>
+  <div>
+    <div class="red-container color-container container center">
+      <div class="hero-info">
+        <h1 class="text-big-header white mb20"> artificial intelligence <br>— at the sunset </h1>
+        <p class="text-subtitle white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="buttons">
+          <a href="" class="primary-button text-paragraph red">get tickets</a>
+          <a href="" class="secondary-button text-paragraph white">see program</a>
+        </div>
       </div>
-      <div class="ctaright">
-        <p id="ctaleftblue"><span id="student">student</span> <br> <span id="prices2">5€</span></p>
-      </div>
+      <img src="img/hero.svg" alt="People talking">
     </div>
-    <h4 id="nopad">LATER ON</h4>
-    <div class="information">
-      <p id="font_medium_blue">DEC 6,2019</p>
-      <p id="font_medium_blue">GALERIA BAR SANTA CLARA, COIMBRA</p>
-    </div>
-  </div>
 
-  <div class="yellow_container">
-    <h3 id="contrib">become a <br> contributor</h3>
-    <p id="connect">Connect to the audience or tell your truth</p>
-    <div class="callToAction">
-      <div class="ctaleft">
-        <p id="ctaleftyellow">sponsor</p>
+    <div class="formula-container container center">
+      <h2 class="text-paragraph yellow align-left mb10">THE FORMULA</h2>
+      <img src="img/math.svg" alt="math">
+    </div>
+
+    <div class="blue-container color-container container center">
+      <div class="program-next align-left">
+        <p class="text-paragraph blue">NEXT SESSION</p>
+        <p class="text-paragraph white mb5">SET 28, 2019</p>
+        <p class="text-paragraph white mb50">GALERIA BAR SANTA CLARA, COIMBRA</p>
       </div>
-      <div class="ctaright">
-        <p id="ctarightyellow">speaker</p>
+      <div class="program-info">
+        <div class="program-section">
+          <p class="text-title italic blue mb20 mt20">talk</p>
+          <p class="text-title-v2 white mb20">Can a robot pass a university entrance exam?</p>
+          <p class="text-paragraph white"><span class="bold">noriko arai</span>, 16:00</p>
+        </div>
+
+        <div class="program-section">
+          <p class="text-title italic blue mb20">workshop</p>
+          <p class="text-title-v2 white mb20">Robotics in business</p>
+          <p class="text-paragraph white"><span class="bold">Laura Neves</span>, 17:00</p>
+        </div>
+
+        <div class="program-section">
+          <p class="text-title italic blue mb20">debate</p>
+          <p class="text-title-v2 white mb20">How do machines affect our behaviour and interaction?</p>
+          <p class="text-paragraph white"><span class="bold">Elon Musk</span>, 18:00</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <a href="" class="primary-button text-paragraph blue">get tickets</a>
+        <a href="" class="secondary-button text-paragraph white">see program</a>
       </div>
     </div>
-  </div>
+    <div class="pricing-container container center">
+      <div class="pricing-later align-right mb50">
+        <h3 class="text-paragraph yellow mb5">LATER ON</h4>
+          <div>
+            <p class="text-paragraph dark-blue mb5">DEC 6,2019</p>
+            <p class="text-paragraph dark-blue mb5">GALERIA BAR SANTA CLARA, COIMBRA</p>
+          </div>
+      </div>
+      <h2 class="text-paragraph yellow align-left mb50">PRICING</h4>
+        <div class="princing-values">
+          <div class="pricing-type center">
+            <p class="text-subtitle bold dark-blue">regular</p>
+            <p class="text-header bold dark-blue">10€</p>
+          </div>
+          <div class="pricing-type center">
+            <p class="text-subtitle bold dark-blue">student</p>
+            <p class="text-header bold dark-blue">5€</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="" class="contrast-button text-paragraph white">see program</a>
+        </div>
+    </div>
 
-  <div class="firstbege">
-    <h4>ORGANISING TEAM</h4>
-    <img id="jek" src="img/jek.svg" alt="jek logo">
-    <img src="img/DSC_2753.png" alt="jek team pic">
-    <p id=subimage>More than a family, a company.</p>
-  </div>
+    <div class="yellow-container color-container container center">
+      <div class="contributor-info center">
+        <h3 class="text-header bold white mb10">become a contributor</h3>
+        <p class="text-subtitle white">Connect to the audience or tell your truth</p>
+      </div>
+      <div class="buttons">
+        <a href="" class="primary-button text-paragraph yellow">sponsor</a>
+        <a href="" class="secondary-button text-paragraph white">speaker</a>
+      </div>
+    </div>
+
+    <div class="team-container container center">
+      <h2 class="text-paragraph yellow align-left mb50">ORGANISING TEAM</h4>
+        <img src="img/jek-logo.svg" class="align-left mb50" alt="jeKnowledge Logo">
+        <div class="team-photo">
+          <img src="img/jek-team.png" alt="jeKnowledge Team">
+          <p class="text-paragraph italic blue mt10">More than a family, a company.</p>
+        </div>
+    </div>
   </div>
 
   <footer>
-  <div class="beforeFooter">
-    <div class="contact">
-      <h4 id="nopad">CONTACT</h4>
-      <p>+351 910 000 000</p>
-      <p>be@aisunsets.com</p>
+    <div class="footer-contacts">
+      <h4 class="text-paragraph yellow mb30">CONTACT</h4>
+      <p class="text-paragraph dark-blue mb30">+351 910 000 000</p>
+      <p class="text-paragraph dark-blue mb30">be@aisunsets.com</p>
     </div>
-    <div class="follow">
-      <h4 id="nopad">FOLLOW</h4>
-      <p><a href="https://www.instagram.com/aisunsets/?igshid=v4uq65r4mydr" target="_blank">Instagram</a></p>
-      <p><a href="https://www.facebook.com/aisunsets/" target="_blank">Facebook</a></p>
-      <p><a href="https://www.linkedin.com/company/aisunsets/about/" target="_blank">LinkedIn</a></p>
-      <p>Mediumtr</p>
+    <div class="footer-social">
+      <h4 class="text-paragraph yellow mb30">FOLLOW</h4>
+      <a href="https://www.facebook.com/aisunsets/" class="text-paragraph dark-blue mb30">Facebook</a>
+      <p class="text-paragraph dark-blue mb30">Instagram</p>
+      <p class="text-paragraph dark-blue mb30">Twitter</p>
     </div>
-  </div>
-    <div class="ending">
-      <h4 id="nopad">T&C</h4>
-      <h4 id="nopad">Privacy Policy</h4>
-      <img id="jekfooter" src="img/jek.svg" alt="jek logo">
+    <div class="footer-all-policy center">
+      <div class="footer-policy align-left">
+        <h4 class="text-paragraph yellow mr20">T&C</h4>
+        <h4 class="text-paragraph yellow mb50">Privacy Policy</h4>
+      </div>
+      <img id="jekfooter" src="img/jek-logo.svg" alt="jeKnowledge Logo">
     </div>
   </footer>
+  </div>
+</body>
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
 </html>

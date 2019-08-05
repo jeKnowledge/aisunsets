@@ -1,0 +1,124 @@
+.yellow-container {
+  height: 90vh;
+  color: #F4EFDF;
+}
+
+.yellow-container .info {
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+}
+
+.yellow-container .info .info-header {
+  font-size: 72px;
+  line-height: 100%;
+  margin-bottom: 4rem;
+}
+
+.yellow-container .info img {
+  width: 35vw;
+  min-width: 40rem;
+  height: auto;
+}
+
+.yellow-container form {
+  width: 40rem;
+}
+
+.yellow-container form .tab {
+  display: none;
+  flex-direction: column;
+}
+
+.yellow-container form input:focus, .yellow-container form button:focus {
+  outline: none;
+}
+
+.yellow-container form input {
+  width: 40rem;
+  height: 3.5rem;
+  border: none;
+  border-bottom: 0.2rem solid #F4EFDF;
+  margin-bottom: 8rem;
+  color: #F4EFDF;
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+.yellow-container form .invalid {
+  border-bottom: 0.2rem solid black;
+}
+
+.yellow-container form button {
+  width: 16.6rem;
+  height: 5.6rem;
+  padding: 1rem 2rem;
+  border-radius: 1.6rem;
+  border: 3px solid #F4EFDF;
+  float: right;
+  background: #F4EFDF;
+  color: #CEC238;
+  font-size: 2rem;
+  line-height: 111%;
+  cursor: pointer;
+}
+
+.yellow-container form button:hover {
+  text-decoration: line-through;
+}
+
+.yellow-container form .submit-header {
+  font-weight: 800;
+}
+
+.yellow-container form #next-btn {
+  margin-left: 1rem;
+}
+
+.yellow-container form #prev-btn {
+  border: none;
+  background: transparent;
+  color: #F4EFDF;
+}
+
+::placeholder {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 161%;
+  color: rgba(244, 239, 223,0.5);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #F4EFDF;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.color-container {
+  background-image: url('../img/bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  border-radius: 2rem;
+  box-shadow: 0rem -.6rem 3rem rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  margin-top: 12rem;
+}
+
+@media (max-width: 980px) { /*mobile*/
+  .yellow-container {
+    height: 110vh;
+  }
+
+  .yellow-container .info {
+    flex-wrap: wrap;
+  }
+}
