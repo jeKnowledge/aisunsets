@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   background-color: #F4EFDF;
   font-family: Alegreya Sans;
@@ -14,6 +14,10 @@ body {
 p, h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0;
+}
+
+#jek-team{
+  align-self: flex-start;
 }
 
 .center {
@@ -60,15 +64,15 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .buttons .primary-button:hover {
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 .buttons .secondary-button:hover {
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 .buttons .contrast-button:hover  {
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 .white {
@@ -110,7 +114,13 @@ p, h1, h2, h3, h4, h5 {
 .mb30 { margin-bottom: 3rem;}
 .mb40 { margin-bottom: 4rem;}
 .mb50 { margin-bottom: 5rem;}
+.mb70 { margin-bottom: 7rem;}
 .ml5 { margin-left: 0.5rem;}
 .ml10 { margin-left: 1rem;}
 .ml15 { margin-left: 1.5rem;}
 .ml20 { margin-left: 2rem;}
+
+#jek-icon{
+  height: 50px;
+  width: 50px;
+}

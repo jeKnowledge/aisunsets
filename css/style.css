@@ -1,5 +1,6 @@
 .container {
   padding: 0 20rem;
+  position: relative;
 }
 
 .red-container  {
@@ -32,14 +33,43 @@
 .blue-container .program-info {
   width: 90vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.program-info .next-sesh{
+  width: 90vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blue-container .program-info .program-section .ind{
+  width: 25vw;
 }
 
 .blue-container .program-info .program-section {
   width: 25vw;
 }
 
+.blue-container .color-container .container .center .program-screen{
+  height: 200vh;
+}
+
+.image-row{
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.image-row .speaker-info{
+  width: 25vw;
+}
+
 .pricing-container {
+  height: 60vh;
+}
+
+.program-page-container{
   height: 60vh;
 }
 
@@ -48,6 +78,8 @@
   display: flex;
   justify-content: space-around;
 }
+
+
 
 .yellow-container {
   height: 40vh;
@@ -87,13 +119,33 @@
   box-shadow: 0rem -.6rem 3rem rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 980px) { /*mobile*/
+@media (min-width: 100px) and (max-width: 980px) { /*mobile*/
+
   .container {
     padding: 0 2rem;
   }
 
+  .color-container{
+    background-size:auto;
+  }
+
   .red-container {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .blue-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container img{
+    width: 100%;
+  }
+
+  .yellow-container {
+    flex-direction: column;
+    width: 100%;
   }
 
   .hero-info {

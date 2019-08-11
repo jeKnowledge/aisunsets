@@ -37,3 +37,13 @@
 .italic {
   font-style: italic;
 }
+
+.program-page-container h2{
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.program-page-container .schedule{
+  font-size: 36px;
+  line-height: 111%;
+}
