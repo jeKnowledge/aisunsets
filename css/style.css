@@ -145,12 +145,6 @@
     margin: 0;
   }
 
-  .zoom{
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-
   .footer-all-policy {
     width: 100%;
     display: flex;
