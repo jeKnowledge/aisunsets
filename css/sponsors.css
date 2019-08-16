@@ -53,16 +53,13 @@
 }
 
 .yellow-container form button {
-  width: 16.6rem;
-  height: 5.6rem;
-  padding: 1rem 2rem;
-  border-radius: 1.6rem;
   border: 3px solid #F4EFDF;
-  float: right;
   background: #F4EFDF;
   color: #CEC238;
   font-size: 2rem;
   line-height: 111%;
+  padding: 1rem 6rem;
+  border-radius: 1.6rem;
   cursor: pointer;
 }
 
@@ -82,6 +79,7 @@
   border: none;
   background: transparent;
   color: #F4EFDF;
+  padding-left: 1rem;
 }
 
 ::placeholder {
@@ -116,6 +114,35 @@ footer {
 @media (max-width: 980px) { /*mobile*/
   .yellow-container {
     height: 110vh;
+  }
+
+  .align-left-mobile{
+    align-self: flex-start;
+  }
+
+  .yellow-container .color-container .container .center .speaker{
+    background-size:contain;
+  }
+
+  label{
+    width: 100%;
+  }
+
+  .yellow-container .info img{
+    width: 90%;
+    height: auto;
+    min-width: 20rem;
+  }
+
+  .yellow-container form input {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 3.5rem;
+    border: none;
+    border-bottom: 0.2rem solid #F4EFDF;
+    margin-bottom: 5rem;
+    font-size: 2rem;
   }
 
   .yellow-container .info {

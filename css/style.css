@@ -1,3 +1,8 @@
+.zoom{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .container {
   padding: 0 20rem;
   position: relative;
@@ -79,11 +84,10 @@
   justify-content: space-around;
 }
 
-
-
 .yellow-container {
   height: 40vh;
   background: #CEC238;
+  margin-top: 1rem;
 }
 
 .contributor-info {
@@ -118,15 +122,20 @@
   box-shadow: 0rem -.6rem 3rem rgba(0, 0, 0, 0.25);
 }
 
+.speaker{
+  background-blend-mode: overlay;
+  background-image: url('../img/bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  box-shadow: 0rem -.6rem 3rem rgba(0, 0, 0, 0.25);
+}
+
 .hide-on-desktop{
   display: none;
 }
 
-@media (min-width: 100px) and (max-width: 980px) { /*mobile*/
-
-  .zoom{
-    overflow-x: hidden;
-  }
+@media (min-width: 321px) and (max-width: 980px) { /*mobile*/
 
   footer{
     flex-wrap: wrap;
@@ -134,6 +143,12 @@
     padding: 0 2rem;
     width: 100%;
     margin: 0;
+  }
+
+  .zoom{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .footer-all-policy {
@@ -154,6 +169,7 @@
     width: 12rem;
     height: 3rem;
     padding: 1rem 1rem;
+    cursor: pointer;
   }
 
   .hide-on-desktop{
@@ -164,8 +180,17 @@
     display: none;
   }
 
+  .text-big-header .white .mb20{
+    margin-bottom: 0rem;
+  }
+
+  .red-buttons{
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+
   .blue-container {
-    height: 90vh;
+    height: 80vh;
   }
 
   .blue-container .program-info .program-section {
@@ -177,7 +202,7 @@
   }
 
   .mb20{
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .color-container{
@@ -186,6 +211,7 @@
 
   .red-container {
     flex-direction: column;
+    height: 90vh;
   }
 
   .blue-container {
@@ -193,7 +219,8 @@
   }
 
   .red-container img{
-    width: 20rem;
+    width: 100%;
+    height: auto;
   }
 
   .team-photo{
@@ -218,6 +245,128 @@
 
   .yellow-container {
     flex-direction: column;
+  }
+
+  .hero-info {
+    width: 100%;
+  }
+
+  .hero-info p {
+    display: none;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 320px) { /*mobile*/
+
+  footer{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 2rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .zoom{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .footer-all-policy {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+  .program-info{
+    flex-direction: column;
+  }
+
+  .formula-container img {
+    min-width: 34rem;
+  }
+
+  .buttons .primary-button, .buttons .secondary-button, .buttons .contrast-button {
+    width: 12rem;
+    height: 3rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+  }
+
+  .hide-on-desktop{
+    display: block;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .text-big-header .white .mb20{
+    margin-bottom: 0rem;
+  }
+
+  .red-buttons{
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .blue-container {
+    height: 100vh;
+  }
+
+  .blue-container .program-info .program-section {
+    width: 90vw;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .mb20{
+    margin-bottom: 0.5rem;
+  }
+
+  .color-container{
+    background-size:auto;
+  }
+
+  .red-container {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .blue-container {
+    flex-direction: column;
+  }
+
+  .red-container img{
+    width: 100%;
+    height: auto;
+  }
+
+  .team-photo{
+    width: 100%;
+  }
+
+  .container img{
+    max-width: 100%;
+  }
+
+  #difmargin{
+    margin-bottom: 0rem;
+  }
+
+  #dif-start{
+    width: 100vw;
+  }
+
+  #jek-logo{
+    width: 20rem;
+  }
+
+  .yellow-container {
+    flex-direction: column;
+    height: 50vh;
   }
 
   .hero-info {

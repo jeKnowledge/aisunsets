@@ -22,8 +22,8 @@
     <nav class="navbar">
       <a class="navbar-logo" href="index.html"><img src="img/mainlogo.svg" alt="Aisunset Logo"></a>
       <div class="navbar-text">
-        <p class="text-paragraph grey mb5">NEXT SESSION</p>
-        <p class="text-paragraph dark-blue">SET 28, 2019</p>
+        <p id="navbar-text" class="text-paragraph grey mb5">NEXT SESSION</p>
+        <p id="navbar-text" class="text-paragraph dark-blue">SET 28, 2019</p>
       </div>
 
       <button class="navbar-toggler center" type="button" onclick="toggle()">
@@ -49,15 +49,15 @@
     </div>
 
     <div>
-      <div class="yellow-container color-container container center">
+      <div class="yellow-container container center speaker">
         <div class="info">
           <div>
-            <p class="text-big-header mb30">everybody has<br>something to teach</p>
-            <p class="text-subtitle">We’re glad your’re here.</p>
+            <p class="text-big-header mb30">Everybody has<br>something to teach.</p>
+            <p class="text-subtitle">We’re glad you’re here.</p>
           </div>
           <img src="img/candidate.svg" alt="Candidate">
         </div>
-        <div>
+        <div class="align-left-mobile">
           <form method="POST" action="https://formspree.io/7222miguel@gmail.com">
             <div class="tab">
               <label class="text-subtitle mb20" for="name">What's your name?</label>
@@ -77,18 +77,10 @@
                 <p class="submit-header text-subtitle italic mb5 mt20">Thanks!</p>
                 <p class="text-paragraph mb30">We’ll get in touch very soon.</p>
               </div>
-              <div class="callToAction">
-                <div class="ctaleft">
-                  <p id="ctaleftred">get tickets (soon)</p>
-                </div>
-                <div class="ctaright">
-                  <p id="ctarightred">see program</p>
-                </div>
-              </div>
             </div>
             <div>
-              <button type="button" id="next-btn" onclick="nextPrev(1)">Next</button>
-              <button type="button" id="prev-btn" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" id="prev-btn" class="align-left-mobile primary-button text-paragraph white" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" id="next-btn" class="secondary-button text-paragraph white" onclick="nextPrev(1)">Next</button>
             </div>
           </form>
         </div>
@@ -108,7 +100,7 @@
         <a href="https://www.linkedin.com/company/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">LinkedIn</a>
         <a href="https://medium.com/ai-sunsets" target="_blank" class="text-paragraph dark-blue mb30">Medium</a>
       </div>
-      <div class="footer-all-policy align-left">
+      <div class="footer-all-policy align-left mt20">
         <div class="footer-policy">
           <h4 class="text-paragraph yellow mr70">T&C</h4>
           <h4 class="text-paragraph yellow mb50 mr70">Privacy Policy</h4>
