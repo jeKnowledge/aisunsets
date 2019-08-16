@@ -109,11 +109,11 @@
 }
 
 .color-container {
+  background-blend-mode: overlay;
   background-image: url('../img/bg.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: overlay;
   border-radius: 2rem;
   box-shadow: 0rem -.6rem 3rem rgba(0, 0, 0, 0.25);
 }
@@ -123,6 +123,10 @@
 }
 
 @media (min-width: 100px) and (max-width: 980px) { /*mobile*/
+
+  body{
+    overflow-x: hidden;
+  }
 
   footer{
     flex-wrap: wrap;
@@ -153,7 +157,7 @@
   }
 
   .hide-on-desktop{
-    display:block;
+    display: block;
   }
 
   .hide{
