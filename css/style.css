@@ -117,7 +117,6 @@
   background-image: url('../img/bg.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 2rem;
   box-shadow: 0rem -.6rem 3rem rgba(0, 0, 0, 0.25);
 }
@@ -166,6 +165,15 @@
     cursor: pointer;
   }
 
+  .buttons {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #buttons-yellow{
+    margin-bottom: 0rem;
+  }
+
   .hide-on-desktop{
     display: block;
   }
@@ -184,7 +192,7 @@
   }
 
   .blue-container {
-    height: 80vh;
+    height: 90vh;
   }
 
   .blue-container .program-info .program-section {
@@ -260,6 +268,15 @@
     margin: 0;
   }
 
+  .buttons {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  #buttons-yellow{
+    margin-bottom: 0rem;
+  }
+
   .zoom{
     overflow-x: hidden;
     overflow-y: scroll;
@@ -305,7 +322,7 @@
   }
 
   .blue-container {
-    height: 100vh;
+    height: 90vh;
   }
 
   .blue-container .program-info .program-section {
