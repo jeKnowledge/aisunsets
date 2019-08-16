@@ -17,104 +17,106 @@
   <title>AI Sunsets</title>
 </head>
 
-<body id="no-scroll">
-  <nav class="navbar">
-    <a class="navbar-logo" href="index.html"><img src="img/mainlogo.svg" alt="Aisunset Logo"></a>
-    <div class="navbar-text">
-      <p class="text-paragraph grey mb5">NEXT SESSION</p>
-      <p class="text-paragraph dark-blue">SET 28, 2019</p>
+<body>
+  <div class="zoom">
+    <nav class="navbar">
+      <a class="navbar-logo" href="index.html"><img src="img/mainlogo.svg" alt="Aisunset Logo"></a>
+      <div class="navbar-text">
+        <p class="text-paragraph grey mb5">NEXT SESSION</p>
+        <p class="text-paragraph dark-blue">SET 28, 2019</p>
+      </div>
+
+      <button class="navbar-toggler center" type="button" onclick="toggle()">
+        <img src="img/hamburguer.svg" alt="hamburguer">
+      </button>
+    </nav>
+    <div class="navbar-collapse center" id="collapse">
+      <ul class="center">
+        <li class="mb20">
+          <a class="text-header bold dark-blue" href="index.html">home</a>
+        </li>
+        <li class="mb20">
+          <a class="text-header bold dark-blue" href="program.html">program</a>
+        </li>
+        <li class="mb20">
+          <a class="text-header bold dark-blue">tickets (soon)</a>
+        </li>
+        <li class="mb50">
+          <a class="text-header bold dark-blue" href="speakers.html">speakers</a>
+        </li>
+      </ul>
+      <p class="text-paragraph dark-blue">with love, from Coimbra</p>
     </div>
 
-    <button class="navbar-toggler center" type="button" onclick="toggle()">
-      <img src="img/hamburguer.svg" alt="hamburguer">
-    </button>
-  </nav>
-  <div class="navbar-collapse center" id="collapse">
-    <ul class="center">
-      <li class="mb20">
-        <a class="text-header bold dark-blue" href="index.html">home</a>
-      </li>
-      <li class="mb20">
-        <a class="text-header bold dark-blue" href="program.html">program</a>
-      </li>
-      <li class="mb20">
-        <a class="text-header bold dark-blue">tickets (soon)</a>
-      </li>
-      <li class="mb50">
-        <a class="text-header bold dark-blue" href="speakers.html">speakers</a>
-      </li>
-    </ul>
-    <p class="text-paragraph dark-blue">with love, from Coimbra</p>
-  </div>
-
-  <div>
-    <div class="yellow-container color-container container center">
-      <div class="info">
-        <div>
-          <p class="text-big-header mb30">everybody has<br>something to teach</p>
-          <p class="text-subtitle">We’re glad your’re here.</p>
-        </div>
-        <img src="img/candidate.svg" alt="Candidate">
-      </div>
-      <div>
-        <form method="POST" action="https://formspree.io/7222miguel@gmail.com">
-          <div class="tab">
-            <label class="text-subtitle mb20" for="name">What's your name?</label>
-            <input type="text" name="name" placeholder="First and Last name" oninput="this.className = ''">
-          </div>
-          <div class="tab">
-            <label class="text-subtitle mb20" for="skill">What are you very good at?</label>
-            <input type="text" name="skill" placeholder="Machine learning, robotics..." oninput="this.className = ''">
-          </div>
-          <div class="tab">
-            <label class="text-subtitle mb20" for="contact">Your contact</label>
-            <input type="text" name="contact" placeholder="Mobile, email" oninput="this.className = ''">
-          </div>
-          <div class="tab">
-            <img src="img/mail.svg" alt="Sent Email">
-            <div>
-              <p class="submit-header text-subtitle italic mb5 mt20">Thanks!</p>
-              <p class="text-paragraph mb30">We’ll get in touch very soon.</p>
-            </div>
-            <div class="callToAction">
-              <div class="ctaleft">
-                <p id="ctaleftred">get tickets (soon)</p>
-              </div>
-              <div class="ctaright">
-                <p id="ctarightred">see program</p>
-              </div>
-            </div>
-          </div>
+    <div>
+      <div class="yellow-container color-container container center">
+        <div class="info">
           <div>
-            <button type="button" id="next-btn" onclick="nextPrev(1)">Next</button>
-            <button type="button" id="prev-btn" onclick="nextPrev(-1)">Previous</button>
+            <p class="text-big-header mb30">everybody has<br>something to teach</p>
+            <p class="text-subtitle">We’re glad your’re here.</p>
           </div>
-        </form>
+          <img src="img/candidate.svg" alt="Candidate">
+        </div>
+        <div>
+          <form method="POST" action="https://formspree.io/7222miguel@gmail.com">
+            <div class="tab">
+              <label class="text-subtitle mb20" for="name">What's your name?</label>
+              <input type="text" name="name" placeholder="First and Last name" oninput="this.className = ''">
+            </div>
+            <div class="tab">
+              <label class="text-subtitle mb20" for="skill">What are you very good at?</label>
+              <input type="text" name="skill" placeholder="Machine learning, robotics..." oninput="this.className = ''">
+            </div>
+            <div class="tab">
+              <label class="text-subtitle mb20" for="contact">Your contact</label>
+              <input type="text" name="contact" placeholder="Mobile, email" oninput="this.className = ''">
+            </div>
+            <div class="tab">
+              <img src="img/mail.svg" alt="Sent Email">
+              <div>
+                <p class="submit-header text-subtitle italic mb5 mt20">Thanks!</p>
+                <p class="text-paragraph mb30">We’ll get in touch very soon.</p>
+              </div>
+              <div class="callToAction">
+                <div class="ctaleft">
+                  <p id="ctaleftred">get tickets (soon)</p>
+                </div>
+                <div class="ctaright">
+                  <p id="ctarightred">see program</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button type="button" id="next-btn" onclick="nextPrev(1)">Next</button>
+              <button type="button" id="prev-btn" onclick="nextPrev(-1)">Previous</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="footer-contacts mr70">
-      <h4 class="text-paragraph yellow mb30">CONTACT</h4>
-      <a href="tel:+351960180566" class="text-paragraph dark-blue mb30">+351 960 180 566</a>
-      <a href="mailto:hi@aisunsets.com" class="text-paragraph dark-blue mb30">hi@aisunsets.com</a>
-    </div>
-    <div class="footer-social">
-      <h4 class="text-paragraph yellow mb30">FOLLOW</h4>
-      <a href="https://www.facebook.com/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">Facebook</a>
-      <a href="https://www.instagram.com/aisunsets/?igshid=v4uq65r4mydr" target="_blank" class="text-paragraph dark-blue mb30">Instagram</a>
-      <a href="https://www.linkedin.com/company/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">LinkedIn</a>
-      <a href="https://medium.com/ai-sunsets" target="_blank" class="text-paragraph dark-blue mb30">Medium</a>
-    </div>
-    <div class="footer-all-policy align-left">
-      <div class="footer-policy">
-        <h4 class="text-paragraph yellow mr70">T&C</h4>
-        <h4 class="text-paragraph yellow mb50 mr70">Privacy Policy</h4>
+    <footer>
+      <div class="footer-contacts mr70">
+        <h4 class="text-paragraph yellow mb30">CONTACT</h4>
+        <a href="tel:+351960180566" class="text-paragraph dark-blue mb30">+351 960 180 566</a>
+        <a href="mailto:hi@aisunsets.com" class="text-paragraph dark-blue mb30">hi@aisunsets.com</a>
       </div>
-      <a class="footer-policy align-left" href="https://jeknowledge.pt/" target="_blank"><img id="jek-icon" src="img/jek-icon.svg" alt="jeKnowledge Logo"></a>
-    </div>
-  </footer>
+      <div class="footer-social">
+        <h4 class="text-paragraph yellow mb30">FOLLOW</h4>
+        <a href="https://www.facebook.com/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">Facebook</a>
+        <a href="https://www.instagram.com/aisunsets/?igshid=v4uq65r4mydr" target="_blank" class="text-paragraph dark-blue mb30">Instagram</a>
+        <a href="https://www.linkedin.com/company/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">LinkedIn</a>
+        <a href="https://medium.com/ai-sunsets" target="_blank" class="text-paragraph dark-blue mb30">Medium</a>
+      </div>
+      <div class="footer-all-policy align-left">
+        <div class="footer-policy">
+          <h4 class="text-paragraph yellow mr70">T&C</h4>
+          <h4 class="text-paragraph yellow mb50 mr70">Privacy Policy</h4>
+        </div>
+        <a class="footer-policy align-left" href="https://jeknowledge.pt/" target="_blank"><img id="jek-icon" src="img/jek-icon.svg" alt="jeKnowledge Logo"></a>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
