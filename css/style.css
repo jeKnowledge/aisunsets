@@ -104,7 +104,6 @@
 }
 
 .team-photo img {
-  min-width: 45rem;
   width: 30vw;
   height: auto;
 }
@@ -119,10 +118,62 @@
   box-shadow: 0rem -.6rem 3rem rgba(0, 0, 0, 0.25);
 }
 
+.hide-on-desktop{
+  display: none;
+}
+
 @media (min-width: 100px) and (max-width: 980px) { /*mobile*/
+
+  footer{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 2rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-all-policy {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+  .program-info{
+    flex-direction: column;
+  }
+
+  .formula-container img {
+    min-width: 34rem;
+  }
+
+  .buttons .primary-button, .buttons .secondary-button, .buttons .contrast-button {
+    width: 12rem;
+    height: 3rem;
+    padding: 1rem 1rem;
+  }
+
+  .hide-on-desktop{
+    display:block;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .blue-container {
+    height: 90vh;
+  }
+
+  .blue-container .program-info .program-section {
+    width: 90vw;
+  }
 
   .container {
     padding: 0 2rem;
+  }
+
+  .mb20{
+    margin-bottom: 1rem;
   }
 
   .color-container{
@@ -131,21 +182,38 @@
 
   .red-container {
     flex-direction: column;
-    width: 100%;
   }
 
   .blue-container {
     flex-direction: column;
+  }
+
+  .red-container img{
+    width: 20rem;
+  }
+
+  .team-photo{
     width: 100%;
   }
 
   .container img{
-    width: 100%;
+    max-width: 100%;
+  }
+
+  #difmargin{
+    margin-bottom: 0rem;
+  }
+
+  #dif-start{
+    width: 100vw;
+  }
+
+  #jek-logo{
+    width: 20rem;
   }
 
   .yellow-container {
     flex-direction: column;
-    width: 100%;
   }
 
   .hero-info {
