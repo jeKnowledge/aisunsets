@@ -23,11 +23,14 @@
 .text-subtitle {
   font-size: 3rem;
   line-height: 100%;
+  font-weight: 500;
 }
 
 .text-paragraph {
   font-size: 2rem;
   line-height: 111%;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .bold {
@@ -46,6 +49,32 @@
 .program-page-container .schedule{
   font-size: 36px;
   line-height: 111%;
+}
+
+.same-size{
+  height: 15vh;
+  width: 25vw;
+}
+
+.pic-size{
+  width: 25vw;
+  height: auto;
+}
+
+#speaker-name{
+  font-family: Alegreya;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 100%;
+}
+
+#speaker-description{
+  font-family: Alegreya Sans SC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 100%;
 }
 
 @media (min-width: 100px) and (max-width: 980px) { /*mobile*/
@@ -67,7 +96,7 @@
 
   .text-title-v2 {
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 100%;
   }
 
@@ -78,12 +107,26 @@
   }
 
   .text-subtitle {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 100%;
   }
 
   #navbar-text{
     font-size: 1.4rem;
     line-height: 100%;
+  }
+
+  .pic-size{
+    width: 100vw;
+    height: auto;
+  }
+
+  .same-size{
+    height: 8vh;
+    width: 90vw;
+  }
+
+  .mobile-mb{
+    margin-bottom: 6rem;
   }
 }
