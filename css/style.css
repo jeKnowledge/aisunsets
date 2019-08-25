@@ -106,6 +106,14 @@
   height: 60vh;
 }
 
+.privacy-policy{
+  height: 90vh;
+}
+
+.terms-and-conditions{
+  height: 180vh;
+}
+
 .princing-values {
   width: 25vw;
   display: flex;
@@ -289,6 +297,18 @@
   .hero-info p {
     display: none;
   }
+
+  .program-page-container{
+    height: 80vh;
+  }
+
+  .privacy-policy{
+    height: 140vh;
+  }
+
+  .terms-and-conditions{
+    height: 350vh;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 320px) { /*mobile*/
@@ -303,6 +323,14 @@
 
   .program-page-container{
     height: 80vh;
+  }
+
+  .privacy-policy{
+    height: 180vh;
+  }
+
+  .terms-and-conditions{
+    height: 500vh;
   }
 
   .container img{

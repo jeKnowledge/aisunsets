@@ -46,6 +46,21 @@
   font-size: 5rem;
 }
 
+.privacy-policy h2{
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.terms-and-conditions h2{
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.terms-and-conditions h3{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
 .program-page-container .schedule{
   font-size: 36px;
   line-height: 111%;
