@@ -84,6 +84,14 @@
   line-height: 100%;
 }
 
+#about-the-talk{
+  font-family: Alegreya Sans SC;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 103%;
+}
+
 #speaker-description{
   font-family: Alegreya Sans SC;
   font-style: normal;
@@ -137,7 +145,7 @@
   }
 
   .same-size{
-    height: 8vh;
+    height: 16vh;
     width: 90vw;
   }
 

@@ -36,7 +36,7 @@
 }
 
 .program-container{
-  height: 120vh;
+  height: 140vh;
   background-color: #104253;
 }
 
@@ -87,6 +87,10 @@
   height: 200vh;
 }
 
+#no-margin-top{
+  margin-top: 0rem;
+}
+
 .image-row{
   width: 90vw;
   display: flex;
@@ -104,14 +108,6 @@
 
 .program-page-container{
   height: 60vh;
-}
-
-.privacy-policy{
-  height: 90vh;
-}
-
-.terms-and-conditions{
-  height: 180vh;
 }
 
 .princing-values {
@@ -225,11 +221,11 @@
   }
 
   .blue-container {
-    height: 90vh;
+    height: 100vh;
   }
 
   .program-container{
-    height: 230vh;
+    height: 300vh;
   }
 
   .program-container .program-info .program-section{
@@ -299,15 +295,7 @@
   }
 
   .program-page-container{
-    height: 80vh;
-  }
-
-  .privacy-policy{
-    height: 140vh;
-  }
-
-  .terms-and-conditions{
-    height: 350vh;
+    height: 65vh;
   }
 }
 
@@ -325,14 +313,6 @@
     height: 80vh;
   }
 
-  .privacy-policy{
-    height: 180vh;
-  }
-
-  .terms-and-conditions{
-    height: 500vh;
-  }
-
   .container img{
     max-width: 100%;
   }
@@ -346,7 +326,7 @@
   }
 
   .program-container{
-    height: 230vh;
+    height: 375vh;
   }
 
   .program-container .program-info .program-section{
@@ -471,5 +451,15 @@
 
   .hero-info p {
     display: none;
+  }
+}
+
+@media (min-height: 800px) and (min-width: 321px) and (max-width: 980px) {
+  .program-page-container{
+    height: 50vh;
+  }
+
+  .program-container {
+    height: 250vh;
   }
 }
