@@ -66,11 +66,6 @@
   line-height: 111%;
 }
 
-.same-size{
-  height: 15vh;
-  width: 25vw;
-}
-
 .pic-size{
   width: 25vw;
   height: auto;
@@ -142,11 +137,6 @@
   .pic-size{
     width: 100vw;
     height: auto;
-  }
-
-  .same-size{
-    height: 16vh;
-    width: 90vw;
   }
 
   .mobile-mb{
