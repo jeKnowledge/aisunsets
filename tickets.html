@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" type="image/gif" href="img/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/sponsors.css">
+  <script src="js/navbar.js"></script>
+  <title>AI Sunsets</title>
+</head>
+
+<body id="no-scroll">
+  <div class="zoom">
+    <nav class="navbar">
+      <a class="navbar-logo" href="index.html"><img src="img/mainlogo.svg" alt="Aisunset Logo"></a>
+      <div class="navbar-text">
+        <p id="navbar-text" class="text-paragraph grey mb5">NEXT SESSION</p>
+        <p id="navbar-text" class="text-paragraph dark-blue">SET 28, 2019</p>
+      </div>
+
+      <button class="navbar-toggler center" type="button" onclick="toggle()">
+        <img src="img/hamburguer.svg" alt="hamburguer">
+      </button>
+    </nav>
+    <div class="navbar-collapse center" id="collapse">
+      <ul class="center">
+        <li class="mb20">
+          <a class="text-header bold dark-blue" href="index.html">home</a>
+        </li>
+        <li class="mb20">
+          <a class="text-header bold dark-blue" href="program.html">program</a>
+        </li>
+        <li class="mb20">
+          <a class="text-header bold dark-blue">tickets (soon)</a>
+        </li>
+        <li class="mb50">
+          <a class="text-header bold dark-blue" href="speakers.html">speakers</a>
+        </li>
+      </ul>
+      <p class="text-paragraph dark-blue">with love, from Coimbra</p>
+    </div>
+
+    <div>
+      <div class="yellow-container container center speaker">
+        <div class="info">
+          <div>
+            <p class="text-big-header mb30">Tickets</p>
+          </div>
+          <img src="img/tickets.png" alt="tickets">
+        </div>
+        <div class="align-left-mobile">
+          <form method="POST" action="https://formspree.io/hi@aisunsets.com">
+            <div class="tab">
+              <label class="text-subtitle mb20" for="name">What's your name?</label>
+              <input type="text" name="name" placeholder="First and Last name" oninput="this.className = ''">
+            </div>
+            <div class="tab">
+              <label class="text-subtitle mb20" for="mail">What's your email address?</label>
+              <input type="text" name="mail" placeholder="Mail" oninput="this.className = ''">
+            </div>
+            <div class="tab">
+              <label class="text-subtitle mb20" for="contact">What's your phone number?</label>
+              <input type="text" name="contact" placeholder="Phone Number" oninput="this.className = ''">
+            </div>
+            <div class="tab">
+              <label class="text-subtitle mb20" for="background">Tell us more about your background!</label>
+              <input type="text" name="background" placeholder="Education, job(s), projects, interests, etc!" oninput="this.className = ''">
+            </div>
+            <div class="tab">
+              <label class="text-subtitle mb20" for="discover">Where did you find out about AI Sunsets?</label>
+              <input type="text" name="discover" placeholder="Through social media, friends, etc..." oninput="this.className = ''">
+            </div>
+            <div class="tab">
+              <label class="text-subtitle mb20" for="ticket-type">Are you a student? If so, tells us where you study and your student number</label>
+              <input type="text" name="ticket-type" placeholder="Yes, @ the University of Coimbra. My student number is 123123123 / No" oninput="this.className = ''">
+            </div>
+            <div class="tab">
+              <img src="img/mail.svg" alt="Sent Email">
+              <div>
+                <p class="submit-header text-subtitle italic mb5 mt20">Thanks!</p>
+                <p class="text-paragraph mb30">We’ll get in touch very soon.</p>
+              </div>
+            </div>
+            <div>
+              <button type="button" id="prev-btn" class="align-left-mobile primary-button text-paragraph white" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" id="next-btn" class="secondary-button text-paragraph white" onclick="nextPrev(1)">Next</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-contacts mr70">
+        <h4 class="text-paragraph yellow mb30">CONTACT</h4>
+        <a href="tel:+351960180566" class="text-paragraph dark-blue mb30">+351 960 180 566</a>
+        <a href="mailto:hi@aisunsets.com" class="text-paragraph dark-blue mb30">hi@aisunsets.com</a>
+      </div>
+      <div class="footer-social">
+        <h4 class="text-paragraph yellow mb30">FOLLOW</h4>
+        <a href="https://www.facebook.com/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">Facebook</a>
+        <a href="https://www.instagram.com/aisunsets/?igshid=v4uq65r4mydr" target="_blank" class="text-paragraph dark-blue mb30">Instagram</a>
+        <a href="https://www.linkedin.com/company/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">LinkedIn</a>
+        <a href="https://medium.com/ai-sunsets" target="_blank" class="text-paragraph dark-blue mb30">Medium</a>
+      </div>
+      <div class="footer-all-policy align-left mt20">
+        <div class="footer-policy align-left">
+          <a  class="text-paragraph yellow mr70" href="terms-and-conditions.html">T&C</a>
+          <a  class="text-paragraph yellow mb50 mr70" href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <a class="footer-policy align-left" href="https://jeknowledge.pt/" target="_blank"><img id="jek-icon" src="img/jek-icon.svg" alt="jeKnowledge Logo"></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
+
+
+<script>
+  var currentTab = 0; // Current tab is set to be the first tab (0)
+  showTab(currentTab); // Display the current tab
+
+  function showTab(n) {
+    // This function will display the specified tab of the form...
+    var x = document.getElementsByClassName("tab");
+    x[n].style.display = "flex";
+    //... and fix the Previous/Next buttons:
+    if (n == 0) {
+      document.getElementById("prev-btn").style.display = "none";
+    } else if (n == 6) {
+      document.getElementById("prev-btn").style.display = "none";
+      document.getElementById("next-btn").style.display = "none";
+    } else {
+      document.getElementById("prev-btn").style.display = "inline";
+    }
+    if (n == (x.length - 5)) {
+      document.getElementById("next-btn").innerHTML = "Submit";
+      document.getElementById("next-btn").type = "submit";
+    } else {
+      document.getElementById("next-btn").innerHTML = "Next";
+    }
+
+    if (n == 6) {
+      document.getElementById("next-btn").type = "submit";
+    } else {
+      document.getElementById("next-btn").type = "button";
+    }
+  }
+
+  function nextPrev(n) {
+    // This function will figure out which tab to display
+    var x = document.getElementsByClassName("tab");
+    // Exit the function if any field in the current tab is invalid:
+    if (n == 1 && !validateForm()) return false;
+    // Hide the current tab:
+    x[currentTab].style.display = "none";
+    // Increase or decrease the current tab by 1:
+    currentTab = currentTab + n;
+    // if you have reached the end of the form...
+    if (currentTab >= x.length) {
+      // ... the form gets submitted:
+      document.getElementById("regForm").submit();
+      return false;
+    }
+    // Otherwise, display the correct tab:
+    showTab(currentTab);
+  }
+
+  function validateForm() {
+    // This function deals with validation of the form fields
+    var x, y, i, valid = true;
+    x = document.getElementsByClassName("tab");
+    y = x[currentTab].getElementsByTagName("input");
+    // A loop that checks every input field in the current tab:
+    for (i = 0; i < y.length; i++) {
+      // If a field is empty...
+      if (y[i].value == "") {
+        // add an "invalid" class to the field:
+        y[i].className = "invalid";
+        // and set the current valid status to false
+        valid = false;
+      }
+    }
+    // If the valid status is true, mark the step as finished and valid:
+
+    return valid; // return the valid status
+  }
+</script>

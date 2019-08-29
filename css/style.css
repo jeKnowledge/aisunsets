@@ -11,9 +11,11 @@
 .red-container  {
   flex-direction: row;
   justify-content: space-around;
-  height: 80vh;
+  height: 100%;
   margin-top: 1rem;
   background-color: #E66453;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
 }
 
 .hero-info {
@@ -26,7 +28,9 @@
 }
 
 .formula-container {
-  height: 70vh;
+  height: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .formula-container img {
@@ -36,12 +40,16 @@
 }
 
 .blue-container {
-  height: 80vh;
+  height: 100%;
   background-color: #104253;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .program-container{
-  height: 140vh;
+  height: 100%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   background-color: #104253;
 }
 
@@ -77,7 +85,9 @@
 }
 
 .blue-container .color-container .container .center .program-screen{
-  height: 200vh;
+  height: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .program-container .program-info .program-section .ind{
@@ -89,7 +99,9 @@
 }
 
 .program-container .color-container .container .center .program-screen{
-  height: 200vh;
+  height: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 #no-margin-top{
@@ -108,11 +120,15 @@
 }
 
 .pricing-container {
-  height: 60vh;
+  height: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .program-page-container{
-  height: 60vh;
+  height: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .princing-values {
@@ -122,7 +138,9 @@
 }
 
 .yellow-container {
-  height: 40vh;
+  height: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   background: #CEC238;
   margin-top: 1rem;
 }
@@ -132,7 +150,9 @@
 }
 
 .team-container {
-  height: 90vh;
+  height: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .team-container h4, .team-container img {
@@ -168,12 +188,13 @@
   display: none;
 }
 
-@media (min-width: 321px) and (max-width: 980px) { /*mobile*/
+@media (max-width: 980px) { /*mobile*/
 
   footer{
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     width: 100%;
     margin: 0;
   }
@@ -184,7 +205,8 @@
   }
 
   .footer-all-policy {
-    width: 100vw;
+    width: 100%;
+    padding-right: 5rem;
     display: flex;
     flex-direction: row;
 }
@@ -226,16 +248,19 @@
   }
 
   .red-buttons{
-    margin-top: 0rem;
     margin-bottom: 2rem;
   }
 
   .blue-container {
-    height: 100vh;
+    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .program-container{
-    height: 335vh;
+    height: 100%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .program-container .program-info .program-section{
@@ -247,7 +272,8 @@
   }
 
   .container {
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .mb20{
@@ -260,7 +286,9 @@
 
   .red-container {
     flex-direction: column;
-    height: 90vh;
+    height: 100%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .program-container{
@@ -305,12 +333,16 @@
   }
 
   .program-page-container{
-    height: 65vh;
+    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
-@media (min-width: 100px) and (max-width: 320px) { /*mobile*/
 
+@media (max-width: 320px) { /*mobile*/
+
+/*
   footer{
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -325,7 +357,9 @@
   }
 
   .program-page-container{
-    height: 80vh;
+    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .container img{
@@ -341,7 +375,9 @@
   }
 
   .program-container{
-    height: 375vh;
+    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .program-container .program-info .program-section{
@@ -353,7 +389,9 @@
   }
 
   .blue-container {
-    height: 120vh;
+    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .buttons {
@@ -423,7 +461,9 @@
 
   .red-container {
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .blue-container {
@@ -531,3 +571,5 @@
     height: auto;
   }
 }
+
+*/
