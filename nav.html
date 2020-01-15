@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="js/navbar.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-logo" href="index.html"
+        ><img src="img/mainlogo.svg" alt="AISunsets Logo"
+      /></a>
+      <div class="navbar-text">
+        <p id="navbar-text" class="text-paragraph grey mb5">NEXT SESSION</p>
+        <p id="navbar-text" class="text-paragraph dark-blue">
+          SET 28, 2019
+        </p>
+      </div>
+
+      <button class="navbar-toggler center" type="button" onclick="toggle()">
+        <img src="img/hamburguer.svg" alt="hamburguer" />
+      </button>
+    </nav>
+    <div class="navbar-collapse center" id="collapse">
+      <ul class="center" id="collapse-menu">
+        <li class="mb20" id="nav-program">
+          <a class="text-header bold dark-blue" href="program.html">program</a>
+        </li>
+        <li class="mb20" id="nav-tickets">
+          <a class="text-header bold dark-blue" href="tickets.html">tickets</a>
+        </li>
+        <li class="mb20" id="nav-sponsors">
+          <a class="text-header bold dark-blue" href="speakers.html"
+            >sponsors</a
+          >
+        </li>
+        <li class="mb50" id="nav-team">
+          <a
+            class="text-header bold dark-blue"
+            href="index.html#team"
+            onclick="toggle()"
+            >team</a
+          >
+        </li>
+      </ul>
+      <p class="text-paragraph dark-blue">with love, from Coimbra</p>
+    </div>
+  </body>
+</html>

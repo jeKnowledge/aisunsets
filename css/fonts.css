@@ -26,6 +26,20 @@
   font-weight: 500;
 }
 
+.text-subtitle-v2 {
+  font-size: 2.5rem;
+  line-height: 100%;
+  font-weight: 800;
+}
+
+.text-subtitle-v2 > small {
+  display: inline-block;
+  padding-top: 0.7em;
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: 500;
+}
+
 .text-paragraph {
   font-size: 2rem;
   line-height: 111%;
@@ -41,37 +55,37 @@
   font-style: italic;
 }
 
-.program-page-container h2{
+.program-page-container h2 {
   font-weight: bold;
   font-size: 5rem;
 }
 
-.privacy-policy h2{
+.privacy-policy h2 {
   font-weight: bold;
   font-size: 5rem;
 }
 
-.terms-and-conditions h2{
+.terms-and-conditions h2 {
   font-weight: bold;
   font-size: 5rem;
 }
 
-.terms-and-conditions h3{
+.terms-and-conditions h3 {
   font-weight: bold;
   font-size: 3rem;
 }
 
-.program-page-container .schedule{
+.program-page-container .schedule {
   font-size: 36px;
   line-height: 111%;
 }
 
-.pic-size{
+.pic-size {
   width: 25vw;
   height: auto;
 }
 
-#speaker-name{
+#speaker-name {
   font-family: Alegreya;
   font-style: normal;
   font-weight: 500;
@@ -79,7 +93,7 @@
   line-height: 100%;
 }
 
-#about-the-talk{
+#about-the-talk {
   font-family: Alegreya Sans SC;
   font-style: normal;
   font-weight: 500;
@@ -87,7 +101,7 @@
   line-height: 103%;
 }
 
-#speaker-description{
+#speaker-description {
   font-family: Alegreya Sans SC;
   font-style: normal;
   font-weight: 500;
@@ -95,9 +109,10 @@
   line-height: 100%;
 }
 
-@media (min-width: 100px) and (max-width: 980px) { /*mobile*/
+@media (min-width: 100px) and (max-width: 980px) {
+  /*mobile*/
   .text-big-header {
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 111%;
   }
 
@@ -121,7 +136,7 @@
   .text-header {
     font-size: 4rem;
     line-height: 100%;
-    text-align: left
+    text-align: left;
   }
 
   .text-subtitle {
@@ -129,17 +144,31 @@
     line-height: 100%;
   }
 
-  #navbar-text{
+  .text-subtitle-v2 {
+    font-size: 1.5rem;
+    line-height: 100%;
+    /* font-weight: 800; */
+  }
+
+  .text-subtitle-v2 > small {
+    display: inline-block;
+    padding-top: 0.7em;
+    font-size: 1.5rem;
+    line-height: 100%;
+    font-weight: 500;
+  }
+
+  #navbar-text {
     font-size: 1.4rem;
     line-height: 100%;
   }
 
-  .pic-size{
+  .pic-size {
     width: 100vw;
     height: auto;
   }
 
-  .mobile-mb{
+  .mobile-mb {
     margin-bottom: 6rem;
   }
 }

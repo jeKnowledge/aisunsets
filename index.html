@@ -13,39 +13,21 @@
   <link rel="stylesheet" type="text/css" href="css/fonts.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="js/navbar.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <title>AI Sunsets</title>
 </head>
 
 <body id="no-scroll">
   <div class="zoom">
-    <nav class="navbar">
-      <a class="navbar-logo" href="index.html"><img src="img/mainlogo.svg" alt="AISunsets Logo"></a>
-      <div class="navbar-text">
-        <p id="navbar-text" class="text-paragraph grey mb5">NEXT SESSION</p>
-        <p id="navbar-text" class="text-paragraph dark-blue">SET 28, 2019</p>
-      </div>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
 
-      <button class="navbar-toggler center" type="button" onclick="toggle()">
-        <img src="img/hamburguer.svg" alt="hamburguer">
-      </button>
-    </nav>
-    <div class="navbar-collapse center" id="collapse">
-      <ul class="center">
-        <li class="mb20">
-          <a class="text-header bold dark-blue" href="index.html">home</a>
-        </li>
-        <li class="mb20">
-          <a class="text-header bold dark-blue" href="program.html">program</a>
-        </li>
-        <li class="mb20">
-          <a class="text-header bold dark-blue" href="tickets.html">tickets</a>
-        </li>
-        <li class="mb50">
-          <a class="text-header bold dark-blue" href="speakers.html">speakers</a>
-        </li>
-      </ul>
-      <p class="text-paragraph dark-blue">with love, from Coimbra</p>
-    </div>
+    <script>
+      $(function() {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
 
     <div>
       <div class="red-container color-container container center">
@@ -99,7 +81,7 @@
         </div>
         <div class="buttons">
           <a class="primary-button text-paragraph blue" href="tickets.html">get tickets</a>
-          <a href="program.html" class="secondary-button text-paragraph white">see program</a>
+          <!-- <a href="program.html" class="secondary-button text-paragraph white">see program</a> -->
         </div>
       </div>
       <div class="pricing-container container center">
@@ -112,13 +94,13 @@
         </div>
         <h2 class="text-paragraph yellow align-left mb50">PRICING</h4>
           <div class="princing-values">
-            <div class="pricing-type center mb30 mr50">
-              <p class="text-subtitle bold dark-blue">regular</p>
-              <p class="text-header bold dark-blue">10€</p>
+            <div class="pricing-type center mb30 mr50" id="price-tag-1">
+              <p class="text-paragraph bold dark-blue">Regular</p>
+              <p class="text-big-header bold dark-blue">10€</p>
             </div>
-            <div class="pricing-type center mb30">
-              <p class="text-subtitle bold dark-blue">student</p>
-              <p class="text-header bold dark-blue">5€</p>
+            <div class="pricing-type center mb30" id="price-tag-2">
+              <p class="text-paragraph bold dark-blue">Student</p>
+              <p class="text-big-header bold dark-blue">5€</p>
             </div>
           </div>
           <div class="hide buttons">
@@ -140,11 +122,12 @@
         </div>
         <div id="buttons-yellow" class="buttons">
           <!-- <a href="" class="primary-button text-paragraph yellow">sponsor</a> -->
+          <a href="speakers.html" class="primary-button text-paragraph yellow">sponsor</a>
           <a href="speakers.html" class="secondary-button text-paragraph white">speaker</a>
         </div>
       </div>
 
-      <div class="team-container container center">
+      <div class="team-container container center" id="team">
         <h2 class="text-paragraph yellow align-left mb50">ORGANISING TEAM</h4>
           <a class="align-left" href="https://jeknowledge.pt/" target="_blank"><img src="img/jek-logo.svg" id="jek-logo" class="mb50" alt="jeKnowledge Logo"></a>
           <div class="container team-photo">
@@ -154,27 +137,14 @@
       </div>
     </div>
 
-    <footer>
-      <div class="footer-contacts mr70">
-        <h4 soon class="text-paragraph yellow mb30">CONTACT</h4>
-        <a href="tel:+351960180566" class="text-paragraph dark-blue mb30">+351 960 180 566</a>
-        <a href="mailto:hi@aisunsets.com" class="text-paragraph dark-blue mb30">hi@aisunsets.com</a>
-      </div>
-      <div class="footer-social">
-        <h4  class="text-paragraph yellow mb30">FOLLOW</h4>
-        <a href="https://www.facebook.com/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">Facebook</a>
-        <a href="https://www.instagram.com/aisunsets/?igshid=v4uq65r4mydr" target="_blank" class="text-paragraph dark-blue mb30">Instagram</a>
-        <a href="https://www.linkedin.com/company/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">LinkedIn</a>
-        <a href="https://medium.com/ai-sunsets" target="_blank" class="text-paragraph dark-blue mb30">Medium</a>
-      </div>
-      <div class="footer-all-policy align-left mt20">
-        <div class="footer-policy align-left">
-          <a  class="text-paragraph yellow mr70" href="terms-and-conditions.html">T&C</a>
-          <a  class="text-paragraph yellow mb50 mr70" href="privacy-policy.html">Privacy Policy</a>
-        </div>
-        <a class="footer-policy align-left" href="https://jeknowledge.pt/" target="_blank"><img id="jek-icon" src="img/jek-icon.svg" alt="jeKnowledge Logo"></a>
-      </div>
-    </footer>
+    <!--Footer-->
+    <div id="footer-placeholder"></div>
+    <script>
+      $(function() {
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
+    <!--end of Footer-->
     </div>
   </div>
 </body>

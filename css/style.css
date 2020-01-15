@@ -1,4 +1,12 @@
-.zoom{
+:root {
+  --white: #f4efdf;
+  --red: #e66453;
+  --blue: #2a6d84;
+  --dark-blue: #104253;
+  --yellow: #cec238;
+}
+
+.zoom {
   overflow-x: hidden;
 }
 
@@ -7,12 +15,12 @@
   position: relative;
 }
 
-.red-container  {
+.red-container {
   flex-direction: row;
   justify-content: space-around;
   height: 100%;
   margin-top: 1rem;
-  background-color: #E66453;
+  background-color: var(--red);
   padding-top: 20rem;
   padding-bottom: 20rem;
 }
@@ -21,7 +29,7 @@
   width: 50%;
 }
 
-.same-size{
+.same-size {
   height: 20vh;
   width: 25vw;
 }
@@ -40,16 +48,16 @@
 
 .blue-container {
   height: 100%;
-  background-color: #104253;
+  background-color: var(--dark-blue);
   padding-top: 15rem;
   padding-bottom: 15rem;
 }
 
-.program-container{
+.program-container {
   height: 100%;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background-color: #104253;
+  background-color: var(--dark-blue);
 }
 
 .blue-container .program-info {
@@ -64,18 +72,18 @@
   justify-content: space-between;
 }
 
-.program-info .next-sesh{
+.program-info .next-sesh {
   width: 90vw;
   display: flex;
   justify-content: flex-start;
 }
 
-.program-container{
+.program-container {
   display: flex;
   justify-content: space-around;
 }
 
-.blue-container .program-info .program-section .ind{
+.blue-container .program-info .program-section .ind {
   width: 25vw;
 }
 
@@ -83,13 +91,13 @@
   width: 25vw;
 }
 
-.blue-container .color-container .container .center .program-screen{
+.blue-container .color-container .container .center .program-screen {
   height: 100%;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-.program-container .program-info .program-section .ind{
+.program-container .program-info .program-section .ind {
   width: 25vw;
 }
 
@@ -97,24 +105,24 @@
   width: 25vw;
 }
 
-.program-container .color-container .container .center .program-screen{
+.program-container .color-container .container .center .program-screen {
   height: 100%;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
-#no-margin-top{
+#no-margin-top {
   margin-top: 0rem;
 }
 
-.image-row{
+.image-row {
   width: 90vw;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
 }
 
-.image-row .speaker-info{
+.image-row .speaker-info {
   width: 25vw;
 }
 
@@ -124,7 +132,7 @@
   padding-bottom: 4rem;
 }
 
-.program-page-container{
+.program-page-container {
   height: 100%;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -136,11 +144,14 @@
   justify-content: space-around;
 }
 
+#price-tag-1 {
+}
+
 .yellow-container {
   height: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: #CEC238;
+  background: var(--yellow);
   margin-top: 1rem;
 }
 
@@ -154,7 +165,8 @@
   padding-bottom: 8rem;
 }
 
-.team-container h4, .team-container img {
+.team-container h4,
+.team-container img {
   align-self: flex-start;
 }
 
@@ -170,26 +182,27 @@
 
 .color-container {
   background-blend-mode: overlay;
-  background-image: url('../img/bg.svg');
+  background-image: url("../img/bg.svg");
   border-radius: 2rem;
-  box-shadow: 0rem -.6rem 3rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0rem -0.6rem 3rem rgba(0, 0, 0, 0.25);
 }
 
-.speaker{
+.speaker {
   background-blend-mode: overlay;
-  background-image: url('../img/bg.svg');
+  background-image: url("../img/bg.svg");
   background-repeat: repeat;
   border-radius: 2rem;
-  box-shadow: 0rem -.6rem 3rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0rem -0.6rem 3rem rgba(0, 0, 0, 0.25);
 }
 
-.hide-on-desktop{
+.hide-on-desktop {
   display: none;
 }
 
-@media (max-width: 980px) { /*mobile*/
+@media (max-width: 980px) {
+  /*mobile*/
 
-  footer{
+  footer {
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-left: 2rem;
@@ -198,7 +211,7 @@
     margin: 0;
   }
 
-  .same-size{
+  .same-size {
     height: 16vh;
     width: 90vw;
   }
@@ -208,9 +221,9 @@
     padding-right: 5rem;
     display: flex;
     flex-direction: row;
-}
+  }
 
-  .program-info{
+  .program-info {
     flex-direction: column;
   }
 
@@ -218,7 +231,9 @@
     min-width: 34rem;
   }
 
-  .buttons .primary-button, .buttons .secondary-button, .buttons .contrast-button {
+  .buttons .primary-button,
+  .buttons .secondary-button,
+  .buttons .contrast-button {
     width: 12rem;
     height: 3rem;
     padding: 1rem 1rem;
@@ -230,23 +245,23 @@
     margin-bottom: 5rem;
   }
 
-  #buttons-yellow{
+  #buttons-yellow {
     margin-bottom: 0rem;
   }
 
-  .hide-on-desktop{
+  .hide-on-desktop {
     display: block;
   }
 
-  .hide{
+  .hide {
     display: none;
   }
 
-  .text-big-header .white .mb20{
+  .text-big-header .white .mb20 {
     margin-bottom: 0rem;
   }
 
-  .red-buttons{
+  .red-buttons {
     margin-bottom: 2rem;
   }
 
@@ -256,13 +271,13 @@
     padding-bottom: 4rem;
   }
 
-  .program-container{
+  .program-container {
     height: 100%;
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 
-  .program-container .program-info .program-section{
+  .program-container .program-info .program-section {
     width: 90vw;
   }
 
@@ -275,12 +290,12 @@
     padding-right: 2rem;
   }
 
-  .mb20{
+  .mb20 {
     margin-bottom: 0.5rem;
   }
 
-  .color-container{
-    background-size:auto;
+  .color-container {
+    background-size: auto;
   }
 
   .red-container {
@@ -290,32 +305,32 @@
     padding-bottom: 6rem;
   }
 
-  .program-container{
+  .program-container {
     flex-direction: column;
   }
 
-  .red-container img{
+  .red-container img {
     width: 100%;
     height: auto;
   }
 
-  .team-photo{
+  .team-photo {
     width: 100%;
   }
 
-  .container img{
+  .container img {
     max-width: 100%;
   }
 
-  #difmargin{
+  #difmargin {
     margin-bottom: 0rem;
   }
 
-  #dif-start{
+  #dif-start {
     width: 100vw;
   }
 
-  #jek-logo{
+  #jek-logo {
     width: 20rem;
   }
 
@@ -331,17 +346,17 @@
     display: none;
   }
 
-  .program-page-container{
+  .program-page-container {
     height: 100%;
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 }
 
+@media (max-width: 320px) {
+  /*mobile*/
 
-@media (max-width: 320px) { /*mobile*/
-
-/*
+  /*
   footer{
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -569,6 +584,5 @@
     width: 50vw;
     height: auto;
   }
+  */
 }
-
-*/

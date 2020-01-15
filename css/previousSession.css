@@ -1,0 +1,116 @@
+:root {
+  --grid-gap: 30px;
+}
+
+#prevSess-section-mobile {
+  display: none;
+}
+
+#prevSess-grid-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: minmax(0, 100px);
+  grid-gap: var(--grid-gap);
+  margin: 0 auto;
+  justify-items: center;
+  grid-template-areas:
+    "lt ct rt"
+    "li ci ri"
+    ". button .";
+}
+
+#prevSess-grid-content > div > img {
+  width: 100%;
+  height: 20vw;
+}
+
+#prevSess-grid-content > h3 {
+  justify-self: start;
+}
+
+#prevSess-grid-left-title {
+  grid-area: lt;
+}
+#prevSess-grid-center-title {
+  grid-area: ct;
+}
+#prevSess-grid-right-title {
+  grid-area: rt;
+}
+#prevSess-grid-left-img {
+  grid-area: li;
+}
+#prevSess-grid-center-img {
+  grid-area: ci;
+}
+#prevSess-grid-right-img {
+  grid-area: ri;
+}
+#prevSess-grid-button {
+  grid-area: button;
+}
+#footer-placeholder {
+  margin-right: 40px;
+}
+
+.bImgSlide {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  #prevSess-section {
+    display: none;
+  }
+  #prevSess-section-mobile {
+    display: initial;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :root {
+    --margin-left: 2.5rem;
+  }
+  #prevSess-grid-content {
+    display: block;
+  }
+  section .prevSess-title {
+    margin-top: 7rem;
+    margin-bottom: -5rem;
+    margin-left: var(--margin-left);
+    font-size: 3.5rem;
+  }
+  #prevSess-grid-content > h3 {
+    margin-top: 9rem;
+    margin-left: var(--margin-left);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    font-weight: 900;
+  }
+  #prevSess-grid-content > h3 > small {
+    font-size: 2.1rem;
+    font-weight: 900;
+  }
+  #prevSess-grid-content img {
+    /* background: rgba(0, 0, 0, 0.2); */
+    width: 100%;
+    height: 100vw;
+    object-fit: contain;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #prevSess-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #prevSess-grid-button {
+    margin-top: 10rem;
+    margin-left: var(--margin-left);
+  }
+
+  #prevSess-grid-button-button {
+    padding: 1rem 3.5rem;
+  }
+}

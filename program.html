@@ -1,142 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="icon" type="image/gif" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/sponsors.css" />
+    <script src="js/navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>AI Sunsets</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="icon" type="image/gif" href="img/favicon.png" />
-  <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/base.css">
-  <link rel="stylesheet" type="text/css" href="css/nav.css">
-  <link rel="stylesheet" type="text/css" href="css/fonts.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/sponsors.css">
-  <script src="js/navbar.js"></script>
-  <title>AI Sunsets</title>
-</head>
+  <body id="no-scroll">
+    <div class="zoom">
+      <!--Navigation bar-->
+      <div id="nav-placeholder"></div>
 
-<body id="no-scroll">
-  <div class="zoom">
-    <nav class="navbar">
-      <a class="navbar-logo" href="index.html"><img src="img/mainlogo.svg" alt="Aisunset Logo"></a>
-      <div class="navbar-text">
-        <p id="navbar-text" class="text-paragraph grey mb5">NEXT SESSION</p>
-        <p id="navbar-text" class="text-paragraph dark-blue">SET 28, 2019</p>
-      </div>
-
-      <button class="navbar-toggler center" type="button" onclick="toggle()">
-        <img src="img/hamburguer.svg" alt="hamburguer">
-      </button>
-    </nav>
-    <div class="navbar-collapse center" id="collapse">
-      <ul class="center">
-        <li class="mb20">
-          <a class="text-header bold dark-blue" href="index.html">home</a>
-        </li>
-        <li class="mb20">
-          <a class="text-header bold dark-blue" href="program.html">program</a>
-        </li>
-        <li class="mb20">
-          <a class="text-header bold dark-blue" href="tickets.html">tickets</a>
-        </li>
-        <li class="mb50">
-          <a class="text-header bold dark-blue" href="speakers.html">speakers</a>
-        </li>
-      </ul>
-      <p class="text-paragraph dark-blue">with love, from Coimbra</p>
-    </div>
-    <div>
-      <div class="program-page-container container center">
-        <div class="align-left mb50">
-          <h2 class="text-paragraph dark-blue mb20">program</h2>
-        </div>
-        <div class="pricing-later align-left mb50">
-          <h3 class="text-paragraph yellow mb5">NEXT SESSION</h3>
+      <script>
+        $(function() {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+      <!--end of Navigation bar-->
+      <div>
+        <div class="program-page-container container center">
+          <div class="align-left mb50">
+            <h2 class="text-paragraph dark-blue mb20">program</h2>
+          </div>
+          <div class="pricing-later align-left mb50">
+            <h3 class="text-paragraph yellow mb5">NEXT SESSION</h3>
             <div>
               <p class="text-paragraph dark-blue mb5">SET 28, 2019</p>
-              <p class="text-paragraph dark-blue mb5">GALERIA BAR SANTA CLARA, COIMBRA</p>
+              <p class="text-paragraph dark-blue mb5">
+                GALERIA BAR SANTA CLARA, COIMBRA
+              </p>
             </div>
-        </div>
-        <div class="pricing-later align-left mb50">
-          <h3 class="text-paragraph yellow mb5">SCHEDULE</h3>
-          <div class="schedule align-left mb50">
-            <h3 class="text-paragraph dark-blue mb5">14:00 opening ceremony</h3>
-            <h3 class="text-paragraph dark-blue mb5">14:30 talk</h3>
-            <h3 class="text-paragraph dark-blue mb5">15:30 coffee break</h3>
-            <h3 class="text-paragraph dark-blue mb5">16:00 workshop</h3>
-            <h3 class="text-paragraph dark-blue mb5">18:30 coffee break</h3>
-            <h3 class="text-paragraph dark-blue mb5">19:00 debate</h3>
-            <h3 class="text-paragraph dark-blue mb5">20:00 closing ceremony</h3>
           </div>
-          <div class="schedule align-left">
-            <h3 class="text-paragraph dark-blue mb5">Every atendee gets a Certificate of Participation at the end of the event</h3>
+          <div class="pricing-later align-left mb50">
+            <h3 class="text-paragraph yellow mb5">SCHEDULE</h3>
+            <div class="schedule align-left mb50">
+              <h3 class="text-paragraph dark-blue mb5">
+                14:00 opening ceremony
+              </h3>
+              <h3 class="text-paragraph dark-blue mb5">14:30 talk</h3>
+              <h3 class="text-paragraph dark-blue mb5">15:30 coffee break</h3>
+              <h3 class="text-paragraph dark-blue mb5">16:00 workshop</h3>
+              <h3 class="text-paragraph dark-blue mb5">18:30 coffee break</h3>
+              <h3 class="text-paragraph dark-blue mb5">19:00 debate</h3>
+              <h3 class="text-paragraph dark-blue mb5">
+                20:00 closing ceremony
+              </h3>
+            </div>
+            <div class="schedule align-left">
+              <h3 class="text-paragraph dark-blue mb5">
+                Every atendee gets a Certificate of Participation at the end of
+                the event
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="program-container color-container container center program-screen"
+        >
+          <div class="program-info">
+            <div class="program-section">
+              <p class="text-title italic blue mb20">talk</p>
+              <p class="same-size text-title-v2 white mb60">
+                Reinforcement Learning as a valid solution for real problems
+              </p>
+              <img
+                class="pic-size mb20"
+                src="img/eduardo-pereira.png"
+                alt="Eduardo Pereira"
+              />
+              <p id="speaker-name" class="white mb5">Eduardo Pereira</p>
+              <p id="speaker-description" class="mobile-mb white mb20">
+                Lead Specialist of Consulting Technology @ Deloitte
+              </p>
+              <p id="about-the-talk" class="blue mb5">about the talk</p>
+              <p id="speaker-description" class="mobile-mb white">
+                Reinforcement learning (RL) is a machine learning framework that
+                address the optimization of decision planning processes. The
+                value of RL have been shown primarily in video game
+                environments, but its recent and consecutive breakthroughs have
+                led to being applied and tested on various business scenarios.
+                This talk will discuss the potential of this kind of approach.
+              </p>
+            </div>
+
+            <div class="program-section">
+              <p class="text-title italic blue mb20">workshop</p>
+              <p class="same-size text-title-v2 white mb60">
+                Convolutional Neural Networks and Image Classification
+              </p>
+              <img
+                class="pic-size mb20"
+                src="img/joao-matias.png"
+                alt="João Matias"
+              />
+              <p id="speaker-name" class="white mb5">João Matias</p>
+              <p id="speaker-description" class="mobile-mb white mb20">
+                Data Scientist @ Talkdesk
+              </p>
+              <p id="about-the-talk" class="blue mb5">about the workshop</p>
+              <p id="speaker-description" class="mobile-mb white">
+                In this workshop we will have a brief introduction to deep
+                learning and see some applications to image classification using
+                Convolutional Neural Networks. Together, we will build an easy
+                model to read numerical digits, using Python and Tensorflow, and
+                see how the same tools can be applied to identify your favorite
+                cartoon character in images.
+              </p>
+            </div>
+
+            <div class="program-section">
+              <p class="text-title italic blue mb20">debate</p>
+              <p class="same-size text-title-v2 white mb60">
+                Artificial Intelligence vs Augmented Intelligence
+              </p>
+              <img
+                class="pic-size mb20"
+                src="img/ricardo.png"
+                alt="Ricardo Pereira"
+              />
+              <p id="speaker-name" class="white mb5">Ricardo Pereira</p>
+              <p id="speaker-description" class="mobile-mb white mb20">
+                Assistant Teacher @ Coimbra Institute of Engineering
+              </p>
+              <p id="about-the-talk" class="blue mb5">about the debate</p>
+              <p id="speaker-description" class="mobile-mb white">
+                An intriguing contrast between ‘Artificial Intelligence’ and
+                ‘Augmented Intelligence’
+              </p>
+            </div>
+          </div>
+          <div class="buttons">
+            <a class="primary-button text-paragraph blue" href="tickets.html"
+              >get tickets</a
+            >
+            <a
+              class="primary-button text-paragraph blue"
+              href="previousSession.html"
+              >1st edition</a
+            >
           </div>
         </div>
       </div>
-      <div class="program-container color-container container center program-screen">
-        <div class="program-info">
-          <div class="program-section">
-            <p class="text-title italic blue mb20">talk</p>
-            <p class="same-size text-title-v2 white mb20">Reinforcement Learning as a valid solution for real problems</p>
-            <img class="pic-size mb20" src="img/eduardo-pereira.png" alt="Eduardo Pereira">
-            <p id="speaker-name" class="white mb5">Eduardo Pereira</p>
-            <p id="speaker-description" class="mobile-mb white mb20">Lead Specialist of Consulting Technology @ Deloitte</p>
-            <p id="about-the-talk" class="blue mb5">about the talk</p>
-            <p id="speaker-description" class="mobile-mb white">Reinforcement learning (RL) is a machine learning framework that address the optimization of decision planning processes. The value of RL have been shown primarily in video game environments, but its recent and consecutive breakthroughs have led to being applied and tested on various business scenarios. This talk will discuss the potential of this kind of approach.</p>
-          </div>
 
-          <div class="program-section">
-            <p class="text-title italic blue mb20">workshop</p>
-            <p class="same-size text-title-v2 white mb20">Convolutional Neural Networks and Image Classification</p>
-            <img class="pic-size mb20" src="img/joao-matias.png" alt="João Matias">
-            <p id="speaker-name" class="white mb5">João Matias</p>
-            <p id="speaker-description" class="mobile-mb white mb20">Data Scientist @ Talkdesk</p>
-            <p id="about-the-talk" class="blue mb5">about the workshop</p>
-            <p id="speaker-description" class="mobile-mb white">In this workshop we will have a brief introduction to deep learning and see some applications to image classification using Convolutional Neural Networks. Together, we will build an easy model to read numerical digits, using Python and Tensorflow, and see how the same tools can be applied to identify your favorite cartoon character in images.</p>
-          </div>
-
-          <div class="program-section">
-            <p class="text-title italic blue mb20">debate</p>
-            <p class="same-size text-title-v2 white mb20">Artificial Intelligence vs Augmented Intelligence</p>
-            <img class="pic-size mb20" src="img/ricardo.png" alt="Ricardo Pereira">
-            <p id="speaker-name" class="white mb5">Ricardo Pereira</p>
-            <p id="speaker-description" class="mobile-mb white mb20">Assistant Teacher @ Coimbra Institute of Engineering</p>
-            <p id="about-the-talk" class="blue mb5">about the debate</p>
-            <p id="speaker-description" class="mobile-mb white">An intriguing contrast between ‘Artificial Intelligence’ and ‘Augmented Intelligence’</p>
-
-
-          </div>
-        </div>
-        <div class="buttons">
-          <a class="primary-button text-paragraph blue" href="tickets.html">get tickets</a>
-        </div>
-      </div>
+      <!--Footer-->
+      <div id="footer-placeholder"></div>
+      <script>
+        $(function() {
+          $("#footer-placeholder").load("footer.html");
+        });
+      </script>
+      <!--end of Footer-->
     </div>
-
-
-    <footer>
-      <div class="footer-contacts mr70">
-        <h4 class="text-paragraph yellow mb30">CONTACT</h4>
-        <a href="tel:+351960180566" class="text-paragraph dark-blue mb30">+351 960 180 566</a>
-        <a href="mailto:hi@aisunsets.com" class="text-paragraph dark-blue mb30">hi@aisunsets.com</a>
-      </div>
-      <div class="footer-social">
-        <h4 class="text-paragraph yellow mb30">FOLLOW</h4>
-        <a href="https://www.facebook.com/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">Facebook</a>
-        <a href="https://www.instagram.com/aisunsets/?igshid=v4uq65r4mydr" target="_blank" class="text-paragraph dark-blue mb30">Instagram</a>
-        <a href="https://www.linkedin.com/company/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">LinkedIn</a>
-        <a href="https://medium.com/ai-sunsets" target="_blank" class="text-paragraph dark-blue mb30">Medium</a>
-      </div>
-      <div class="footer-all-policy align-left mt20">
-        <div class="footer-policy align-left">
-          <a  class="text-paragraph yellow mr70" href="terms-and-conditions.html">T&C</a>
-          <a  class="text-paragraph yellow mb50 mr70" href="privacy-policy.html">Privacy Policy</a>
-        </div>
-        <a class="footer-policy align-left" href="https://jeknowledge.pt/" target="_blank"><img id="jek-icon" src="img/jek-icon.svg" alt="jeKnowledge Logo"></a>
-      </div>
-    </footer>
-  </div>
-</body>
+  </body>
 </html>

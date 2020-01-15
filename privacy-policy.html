@@ -1,92 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="icon" type="image/gif" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>AI Sunsets</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="icon" type="image/gif" href="img/favicon.png" />
-  <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/base.css">
-  <link rel="stylesheet" type="text/css" href="css/nav.css">
-  <link rel="stylesheet" type="text/css" href="css/fonts.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="js/navbar.js"></script>
-  <title>AI Sunsets</title>
-</head>
+  <body id="no-scroll">
+    <div class="zoom">
+      <!--Navigation bar-->
+      <div id="nav-placeholder"></div>
 
-<body id="no-scroll">
-  <div class="zoom">
-    <nav class="navbar">
-      <a class="navbar-logo" href="index.html"><img src="img/mainlogo.svg" alt="AISunsets Logo"></a>
-      <div class="navbar-text">
-        <p id="navbar-text" class="text-paragraph grey mb5">NEXT SESSION</p>
-        <p id="navbar-text" class="text-paragraph dark-blue">SET 28, 2019</p>
-      </div>
+      <script>
+        $(function() {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+      <!--end of Navigation bar-->
 
-      <button class="navbar-toggler center" type="button" onclick="toggle()">
-        <img src="img/hamburguer.svg" alt="hamburguer">
-      </button>
-    </nav>
-    <div class="navbar-collapse center" id="collapse">
-      <ul class="center">
-        <li class="mb20">
-          <a class="text-header bold dark-blue" href="index.html">home</a>
-        </li>
-        <li class="mb20">
-          <a class="text-header bold dark-blue" href="program.html">program</a>
-        </li>
-        <li class="mb20">
-          <a class="text-header bold dark-blue" href="tickets.html">tickets</a>
-        </li>
-        <li class="mb50">
-          <a class="text-header bold dark-blue" href="speakers.html">speakers</a>
-        </li>
-      </ul>
-      <p class="text-paragraph dark-blue">with love, from Coimbra</p>
-    </div>
-
-    <div>
-      <div class="container center privacy-policy">
-        <div>
-          <div class="align-left mb50">
-            <h2 class="text-paragraph dark-blue mt40 mb20">Privacy Policy</h2>
+      <div>
+        <div class="container center privacy-policy">
+          <div>
+            <div class="align-left mb50">
+              <h2 class="text-paragraph dark-blue mt40 mb20">Privacy Policy</h2>
+            </div>
+            <p class="text-paragraph dark-blue mb20">
+              Your privacy is important to us. It is jeKnowledge's policy to
+              respect your privacy regarding any information we may collect from
+              you across our website,
+              <a
+                class="text-paragraph dark-blue mb30"
+                href="http://aisunsets.com"
+                >http://aisunsets.com</a
+              >, and other sites we own and operate.
+            </p>
+            <p class="text-paragraph dark-blue mb20">
+              We only ask for personal information when we truly need it to
+              provide a service to you. We collect it by fair and lawful means,
+              with your knowledge and consent. We also let you know why we’re
+              collecting it and how it will be used.
+            </p>
+            <p class="text-paragraph dark-blue mb20">
+              We only retain collected information for as long as necessary to
+              provide you with your requested service. What data we store, we’ll
+              protect within commercially acceptable means to prevent loss and
+              theft, as well as unauthorised access, disclosure, copying, use or
+              modification.
+            </p>
+            <p class="text-paragraph dark-blue mb20">
+              We don’t share any personally identifying information publicly or
+              with third-parties, except when required to by law.
+            </p>
+            <p class="text-paragraph dark-blue mb20">
+              Our website may link to external sites that are not operated by
+              us. Please be aware that we have no control over the content and
+              practices of these sites, and cannot accept responsibility or
+              liability for their respective privacy policies.
+            </p>
+            <p class="text-paragraph dark-blue mb20">
+              You are free to refuse our request for your personal information,
+              with the understanding that we may be unable to provide you with
+              some of your desired services.
+            </p>
+            <p class="text-paragraph dark-blue mb20">
+              Your continued use of our website will be regarded as acceptance
+              of our practices around privacy and personal information. If you
+              have any questions about how we handle user data and personal
+              information, feel free to contact us.
+            </p>
+            <p class="text-paragraph dark-blue mb20">
+              This policy is effective as of 25 August 2019.
+            </p>
+            <p class="text-paragraph dark-blue mb50">
+              Generated by
+              <a
+                class="text-paragraph dark-blue mb30"
+                title="Privacy Policy Template Generator"
+                href="https://getterms.io/"
+                >GetTerms.io</a
+              >
+            </p>
           </div>
-            <p class="text-paragraph dark-blue mb20">Your privacy is important to us. It is jeKnowledge's policy to respect your privacy regarding any information we may collect from you across our website, <a class="text-paragraph dark-blue mb30" href="http://aisunsets.com">http://aisunsets.com</a>, and other sites we own and operate.</p>
-            <p class="text-paragraph dark-blue mb20">We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</p>
-            <p class="text-paragraph dark-blue mb20">We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.</p>
-            <p class="text-paragraph dark-blue mb20">We don’t share any personally identifying information publicly or with third-parties, except when required to by law.</p>
-            <p class="text-paragraph dark-blue mb20">Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.</p>
-            <p class="text-paragraph dark-blue mb20">You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</p>
-            <p class="text-paragraph dark-blue mb20">Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>
-            <p class="text-paragraph dark-blue mb20">This policy is effective as of 25 August 2019.</p>
-            <p class="text-paragraph dark-blue mb50">Generated by <a class="text-paragraph dark-blue mb30" title="Privacy Policy Template Generator" href="https://getterms.io/">GetTerms.io</a></p>
         </div>
       </div>
-    </div>
 
-    <footer>
-      <div class="footer-contacts mr70">
-        <h4 soon class="text-paragraph yellow mb30">CONTACT</h4>
-        <a href="tel:+351960180566" class="text-paragraph dark-blue mb30">+351 960 180 566</a>
-        <a href="mailto:hi@aisunsets.com" class="text-paragraph dark-blue mb30">hi@aisunsets.com</a>
-      </div>
-      <div class="footer-social">
-        <h4  class="text-paragraph yellow mb30">FOLLOW</h4>
-        <a href="https://www.facebook.com/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">Facebook</a>
-        <a href="https://www.instagram.com/aisunsets/?igshid=v4uq65r4mydr" target="_blank" class="text-paragraph dark-blue mb30">Instagram</a>
-        <a href="https://www.linkedin.com/company/aisunsets/" target="_blank" class="text-paragraph dark-blue mb30">LinkedIn</a>
-        <a href="https://medium.com/ai-sunsets" target="_blank" class="text-paragraph dark-blue mb30">Medium</a>
-      </div>
-      <div class="footer-all-policy align-left mt20">
-        <div class="footer-policy align-left">
-          <a class="text-paragraph yellow mr70" href="terms-and-conditions.html">T&C</a>
-          <a class="text-paragraph yellow mr70 mb50" href="index.html">Home</a>
-        </div>
-        <a class="footer-policy align-left" href="https://jeknowledge.pt/" target="_blank"><img id="jek-icon" src="img/jek-icon.svg" alt="jeKnowledge Logo"></a>
-      </div>
-    </footer>
+      <!--Footer-->
+      <div id="footer-placeholder"></div>
+      <script>
+        $(function() {
+          $("#footer-placeholder").load("footer.html");
+        });
+      </script>
+      <!--end of Footer-->
     </div>
-</body>
+  </body>
 </html>
