@@ -95,6 +95,16 @@ h5 {
   cursor: pointer;
 }
 
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.disabled::after {
+  content: " (not available yet)";
+  font-size: 1.4rem;
+}
+
 .white {
   color: var(--white);
 }
