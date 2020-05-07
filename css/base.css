@@ -219,3 +219,9 @@ h5 {
   height: 50px;
   width: 50px;
 }
+
+@media screen and (max-width: 380px) {
+  .two-buttons {
+    display: flex;
+  }
+}
