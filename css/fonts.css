@@ -158,7 +158,7 @@
     font-weight: 500;
   }
 
-  #navbar-text {
+  .navbar-text {
     font-size: 1.4rem;
     line-height: 100%;
   }

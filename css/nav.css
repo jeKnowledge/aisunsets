@@ -48,6 +48,10 @@
   outline: none;
 }
 
+.navbar-text-container > p {
+  text-align: center;
+}
+
 footer {
   height: 100%;
   display: flex;

@@ -48,10 +48,12 @@ h5 {
   align-self: flex-end;
 }
 
+.center-buttons {
+  margin: 0 auto;
+}
+
 .buttons {
-  /* border: 2px black solid; */
   margin-top: 10rem;
-  /* width: 60rem; */
 }
 
 .buttons .primary-button,
