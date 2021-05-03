@@ -16,7 +16,8 @@
 
 .text-title-v2 {
   font-weight: 800;
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 2vw;
   line-height: 100%;
 }
 
